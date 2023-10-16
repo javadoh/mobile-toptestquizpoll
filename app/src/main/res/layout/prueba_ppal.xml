@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="fitXY"
+    android:scrollbars="none"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar"
+        ></include>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_below="@+id/toolbar"
+    android:layout_above="@+id/adBannerView"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tituloPruebaPpal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:layout_weight="0.4"
+            />
+
+        <!--<Chronometer
+            android:id="@+id/calling_crono"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:textSize="18dp"
+            android:layout_weight="1.6"
+            />-->
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imagenPregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:background="@color/colorSecondaryText"
+        android:src="@drawable/store_backphone"
+        />
+
+    <TextView
+        android:id="@+id/textoPregunta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/respuestasPreDefRdio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="left"
+        android:gravity="left"
+        >
+
+        <RadioButton
+            android:id="@+id/radioButtonResp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/textBackDarkGray"
+            />
+        <RadioButton
+            android:id="@+id/radioButtonResp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/textBackDarkGray"
+            />
+        <RadioButton
+            android:id="@+id/radioButtonResp3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/textBackDarkGray"
+            />
+        <RadioButton
+            android:id="@+id/radioButtonResp4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/textBackDarkGray"/>
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btnPreguntaAnterior"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnPreguntaAnteriorPru"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="18dp"
+            android:layout_weight="1.2"
+            android:layout_marginRight="10dp"
+            android:background="@color/textBackDarkGray"/>
+
+        <Button
+            android:id="@+id/btnPreguntaSiguiente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="@string/btnPreguntaSiguientePru"
+            android:layout_weight="0.8"
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorSecondaryText"/>
+
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>
+</ScrollView>

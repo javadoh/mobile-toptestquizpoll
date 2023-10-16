@@ -1,0 +1,262 @@
+<resources>
+    <string name="app_name">TestMy</string>
+    <string name="mensaje_inicio">Welcome to TestMy!</string>
+    <string name="action_settings">Configuration</string>
+    <string name="tituloPpalPrueba">DYNAMIC TEST</string>
+    <string name="tituloPpalAdmin">EXAMS SURVEYS ADMINISTRATION</string>
+    <string name="tituloRegistroEncuestado">USER DATA REGISTER</string>
+    <string name="tituloRegistroParamsEncuesta">PREVIOUS TEST DATA REGISTER</string>
+    <string-array name="tipo_datos_campos_encuesta">
+        <item>Text</item>
+        <item>Numeric</item>
+        <item>Decimal</item>
+    </string-array>
+    <!--MENU TITLES-->
+    <string name="dialogoNewsTitle">NEWS</string>
+    <string name="menuStoreTitle">STORE</string>
+    <string name="menuFaqTitle">FAQ</string>
+    <string name="menuFavTitle">Favorites</string>
+    <string name="menuShareTitle">Share</string>
+    <string name="menuLogInOutTitle">Log In/Out</string>
+    <string name="dialogoOlvidoPassTitle"><b>FORGOT YOUR PASSWORD?</b></string>
+    <string name="dialogoCambioPassTitle"><b>UPDATE PASSWORDS</b></string>
+    <string name="titleSignUp">NEW USERS SIGN UP</string>
+    <!--SUB TITLES -->
+    <string name="mainSubTitle">All in your pocket</string>
+    <string name="dialogCambioPassSubTitulo">Please, enter the required fields.</string>
+    <!--ERRORES-->
+    <string name="exception_message">An error has happen</string>
+    <string name="errorTienda">We cannot call google in pay services, we are sorry!, we suggest you to check the google store instalation, the mobile configuration and that your email account is valid.</string>
+    <string name="errorUserLogin">The username you have entered is wrong, please do not use special characters, and be sure its length is over three characters.</string>
+    <string name="errorPassLogin">The password you have entered is wrong, please be sure your password have at least six characters, and it cannot contain special characters.</string>
+    <string name="errorDniRegister">The Dni you have entered is invalid, it must be only numbers.</string>
+    <string name="errorEmailRegister">The email you have entered is invalid, please be sure you enter a valid one.</string>
+    <string name="errorOcupacionEncuestado">The user ocupation you have entered is invalid, please check it out.</string>
+    <string name="errorApellidoEncuestado">The user lastname you have entered is invalid, please check it out.</string>
+    <string name="errorNombreEncuestado">The user name you have entered is invalid, please check it out.</string>
+    <string name="errorDireccionEncuestado">The address you have entered is invalid, please be sure it contains only alphanumeric characters.</string>
+    <!-- ADMOB ########### CAMBIAR POR LOS QUE SE PARAMETRICEN ################# -->
+    <string name="adbanner">ca-app-pub-9433945240629594/4357069468</string>
+    <string name="adintersticial">ca-app-pub-9433945240629594/5833802669</string>
+    <!--## DIALOGO TIENDA -->
+    <string name="compra_realizada_store">You have already bought the pub disable product. Thank you!</string>
+    <string name="montoPagoPremium">0.99</string>
+    <string name="monedaPago">US$</string>
+    <string name="subTituloPago">JUST ONE PRODUCT</string>
+    <string name="btnpagar">PAY NOW</string>
+    <string name="btnTiendaEnlacePago">CHECK IT</string>
+    <!--TERMINOS Y CONDICIONES-->
+    <string name="terminos_condiciones_text">The client undertakes to use the Services in a diligent, correct and lawful manner and, in particular, for information purposes only and not restrictive, undertakes to refrain from: using the information contained in this application without the risk of assuming the risks Can lead to. It is the duty of the user to deepen the information presented in this application. The use of Natural Medicinal Plants for purposes or effects contrary to law, morality and generally accepted good practices or public order; Reproduce or copy, distribute, allow public access through any form of public communication, transform or modify the Services, unless authorized by the holder of the corresponding rights or is legally permitted; Perform any act that may be considered an infringement of any intellectual or industrial property rights belonging to JAVADOH SA or to third parties; To use the Services and in particular information of any kind obtained through the application to send advertising, communications for the purpose of direct sale or any other kind of commercial purpose, unsolicited messages addressed to a plurality of people regardless of Its purpose, as well as to market or otherwise disclose such information; The Client will be liable for damages and damages of any nature that JAVADOH SA may suffer, on occasion or as a consequence of breach of any of the obligations set forth above as well as any others included in these General Conditions and / or those imposed by the Law in Relation to the use of the application. JAVADOH SA will ensure at all times respect for the current legal system, and will be entitled to interrupt, in its sole discretion, the Service or exclude the Client from the Website in case of alleged, complete or incomplete commission of any of the offenses or Faults typified by the current Criminal Code, or in case of observing any conduct that in the opinion of JAVADOH SA are contrary to these General Conditions, the General Conditions of Contract operating for this Website, the Law, the standards established by JAVADOH SA or Its collaborators or may disturb the good functioning, image, credibility and / or prestige of JAVADOH SA or its collaborators.
+    </string>
+    <!-- BUTTONS -->
+    <string name="btn_enviar">SEND</string>
+    <string name="btn_cancelar">CANCEL</string>
+    <string name="btn_face_continue">CONTINUE</string>
+    <string name="btn_accept">ACCEPT</string>
+    <string name="btn_later">LATER</string>
+    <!-- EMAIL SEND FORGOT PASS -->
+    <string name="asuntoEmailPassSend">TestMy - Account Recover</string>
+    <string name="bodyEmailPassSend">Dear user, we have recovered your account data. \n \n Please, take note, your login user is: </string>
+    <string name="bodyEmailPassSend2">\n \n The admin password is: </string>
+    <string name="bodyEmailPassSend3">\n \n The secondary password for students or clients is: </string>
+    <string name="emailSendSuccess">The email has been sent correctly.</string>
+    <string name="emailPasswordAuth">6s1zha8to.-0</string>
+
+    <!-- REGISTRO USUARIO -->
+    <string name="asuntoEmailSignUpSend">TestMy - Account Creation</string>
+    <string name="bodyEmailSignUpSend">"Dear user, your account has been created. To access into the application your login user is:  "</string>
+    <string name="bodyEmailSignUpSend2">"\n \n The admin password is: "</string>
+    <string name="bodyEmailSignUpSend3">"\n \n The secondary password for students or clients is: "</string>
+    <!-- ERRORES -->
+    <string name="errorEmailEnvio">"There is an error while trying to send the recover account email: "</string>
+    <!-- LOGIN MSG ERRORES Y EXITOS -->
+    <string name="passLoginActualIncorrecto">The user or password you have entered is wrong.</string>
+    <string name="passSecCambioNoCoincide">The secondary passwords does not match, please be sure both are identically.</string>
+    <string name="passPpalCambioNoCoincide">The main passwords does not match, please be sure both are identically.</string>
+    <string name="passLongitudError">The passwords length must be six characters at least, please check it all.</string>
+    <string name="msg_actualiza_pass_exito">The passwords have benn updated correctly.</string>
+    <string name="msg_pass_edit_error_match_ppal_sec">The main password and the secondary password cannot be the same, please be sure both are diferents.</string>
+    <string name="errorInAppPayCreated">We could not connect with the google payment services, sorry... Please try later and make sure you have internet access.</string>
+    <string name="errorNoInternet">There is no internet connection, we cannot continue without it.</string>
+    <!-- UPDATES PROXIMOS -->
+    <string name="proxSeccionEditPerfil">You will soon be able to edit your profile information.</string>
+    <string name="proxSeccionCompartir">The option to share the note will soon be available.</string>
+    <string name="proxSeccionFavoritos">The option to bookmark the exams will be available soon.</string>
+    <string name="proxUpdateNews">Welcome! This is the TestMy Application release, we hope it can be useful for you. To learn how to use this app, please go to the next link: <a href="http://www.javadoh.com/landings/topquiztestpoll/app/tutorials/use.html">Watch tutorial</a></string>
+    <string name="proxUpdateNews2"><b> In our next release: </b> /n /n - Delete documents option. /n /n - Excel report sheet improvements. /n /n - Premium report option enabled with more details and email share.</string>
+
+    <!-- FAQ -->
+    <string name="usuariosAppFaq">TestMy allows the registration of users, who must generate a main password and a secondary password, when registering successfully you should get an email with your account. When logging in with the main user and password, the option of creation, presentation of tests and visualization of reports is enabled, as well as the purchases in the store. \n \n On the other hand, when entering with the user and the secondary password, only the option to present tests, surveys, where you have to choose between the existing tests and enter an additional password of 4 digits corresponding to that test; That is, the total control has the main user, who must supply secondary passwords and by exam to their students, followers, respondents, etc. /n /n Please watch the next tutorial to learn more about how to use the app: <a href="http://www.javadoh.com/landings/topquiztestpoll/app/tutorials/use.html">Go to TestMy tutorial</a></string>
+    <string name="usuariosAppFaq2">In addition, the user has the option to reset the passwords and to ask for the password of his user when he has forgotten it. To see reports into another device, you just need to login with your primary password on it.</string>
+    <string name="creacionPruebaFaq">The application allows to create tests and / or surveys dynamically with an indeterminate number of questions, indicating the text of the question, the text four possible answers associated with that question, an image associated with that question, the number of the answer that corresponds to the question Correct, among other main data like the title, the total time and the four-digit password for its presentation.</string>
+    <string name="reportesAppFaq">There is a display option for data presentation of tests, surveys that lists the number of users that submitted with all their detail data and the option for non-premium users to export such data to excel ... \ n \ n Premium users will be able to export the data through the application, which will send an email with the report files.</string>
+    <string name="storeAppFaq">The application has among its products available at the store to date, the option to disable advertising, the option to configure multiple selection responses and the option of premium reports directed to the users email.</string>
+    <string name="presentacionPruebaFaq">The students or respondents will enter basic data of their profile, followed by the beginning of the test or survey, where they will have a time for their presentation, a single answer selection per question and a completion message that shows the final note if it is a test and not a survey, thanks to an algorithm.</string>
+    <!-- ################ MODULOS ############# -->
+    <!-- #### LOGIN #### -->
+    <string name="hintUsuarioLogin">User</string>
+    <string name="hintUsuarioPassLogin">Password</string>
+    <string name="btnSignInLogin">ENTER</string>
+    <string name="usuarioSinRegistro">You do not have an account? .... <b><u>Sign Up</u></b></string>
+    <string name="olvidoPass">I forgot my password!</string>
+    <!-- OLVIDO LOGIN -->
+    <string name="subTitleOlvidoPass">Please, enter the email you registered and we will send you a new password.</string>
+    <string name="hintEmailOlvidoPass">Enter your email...</string>
+    <!-- #### DIALOG PASS CHANGE #### -->
+    <string name="dialPassChangeUser">Enter your user login</string>
+    <string name="dialActualPassChangeUser">Current password</string>
+    <string name="dialNewPassChangeUser">New main password</string>
+    <string name="dialConfirmPassChangeUser">Confirm the main password</string>
+    <string name="dialNewSeconPassChangeUser">New secondary password</string>
+    <string name="dialConfirmSeconPassChangeUser">"Confirm the seconday password"</string>
+    <!-- DIALOG EXAM PASS PARA PRESENTAR PRUEBA/ENCUESTA #### -->
+    <string name="dialSubTitlePassExam">"Enter the exam/survey password to start"</string>
+    <!-- #### PRUEBA PRINCIPAL #### -->
+    <string name="btnPreguntaAnteriorPru">BACK</string>
+    <string name="btnPreguntaSiguientePru">NEXT</string>
+    <!-- #### REGISTRO DE USUARIOS #### -->
+    <string name="hintAliasRegUser">Alias Login</string>
+    <string name="hintEmailRegUser">Email</string>
+    <string name="hintPassAdminRegUser">Main password</string>
+    <string name="hintPassUsersReg">Secondary password</string>
+    <string name="hintPassConfRegUser">Password confirm</string>
+    <!-- #### TEST PRUEBA DESPEDIDA #### -->
+    <string name="btnFinTest">Finish</string>
+    <string name="msg_despedida">You have been finished the exam/survey, thanks for your time!. The score is: </string>
+    <!-- ##### REGISTRO PERFIL ENCUESTADO O PRESENTADOR ##### -->
+    <string name="hintDniRegPerf">Dni</string>
+    <string name="hintNombresRegPerf">Names</string>
+    <string name="hintApellidosRegPerf">Last names</string>
+    <string name="hintDireccionRegPerf">Address</string>
+    <string name="txtSexoRegPerf">Sexo</string>
+    <string name="txtRadioBtnFemRegPerf">Female</string>
+    <string name="txtRadioBtnMascRegPerf">Male</string>
+    <string name="hintEmailRegPerf">Email</string>
+    <string name="hintEdadRegPerf">Age</string>
+    <string name="hintOcupacionRegPerf">Ocupation</string>
+    <!-- BUTTONS REG PERF -->
+    <string name="btnInicioTestRegPerf">BEGIN</string>
+    <string name="btnRegresarRegPerf">RETURN</string>
+
+    <!-- #### CREACION DE PRUEBAS #### -->
+    <string name="tituloCreaPru">EXAMS/SURVEYS REGISTER</string>
+    <string name="hintTituloPruebaCreaPru">Exam/Survey title</string>
+    <string name="hintContraseñaCreaPru">Password</string>
+    <string name="hintTiempoMinCreaPru">Time minutes</string>
+    <string name="tituloSeccionPregCreaPru">CREATE QUESTIONS SECTION</string>
+    <string name="hintPreguntaCreaPru">Question text</string>
+    <string name="hintResACreaPru">First answer of the question</string>
+    <string name="hintResBCreaPru">Second answer of the question</string>
+    <string name="hintResCCreaPru">Third answer of the question</string>
+    <string name="hintResDCreaPru">Fourth answer of the question</string>
+    <string name="hintRespCorrCreaPru">Corr. Answer</string>
+    <string name="btnCargaImgCreaPru">Load Image</string>
+    <string name="hintRutaArchivoCreaPru">File path</string>
+    <string name="btnGuardarDatosCreaPru">UPLOAD</string>
+    <string name="btnRegresarCreaPru">RETURN</string>
+    <string name="tituloMsgConfirmCreaPru">Confirmation message</string>
+    <string name="btnDialogConfAcepCreaPru">ACCEPT</string>
+    <string name="btnDialogConfEndPru">FINISH</string>
+    <string name="btnDialogConfCancCreaPru">CANCEL</string>
+    <string name="intentSelectPicture">Select Picture</string>
+    <!-- MENSAJES -->
+    <string name="msgValidTextNextPreg">Dear user, you must complete the required fields to continue with another question.</string>
+    <string name="msgValidDelFirstPreg">Dear user, you cannot use this option in your first question.</string>
+    <string name="msgDialogConfirmCreaPru">Are you sure you have finished editing your survey / survey data? If so, you will save the data entered on the server.</string>
+    <string name="msgValidFormFieldsCreaPru">Dear user, you must complete the required fields in order to continue with the following question</string>
+    <string name="msgDialogConfirmFinPru">Are you sure you have finished with your presentation? If you do, press finish button, in other case press cancel button.</string>
+
+    <!-- #### REPORTES #### -->
+    <string name="nombreArchivoExcelReport">"report.xls"</string>
+    <string name="subTitlePruebaReportPrem">"Exam/Survey: "</string>
+    <string name="exportarExcelEmailPrem">EMAIL EXPORT</string>
+    <string name="btnRegresarReport">RETURN</string>
+    <string name="btnExportarExcel">EXCEL EXPORT</string>
+    <!-- TABLE HEADERS -->
+    <string name="tabHeadFechaReport">DATE OF TEST</string>
+    <string name="tabHeadUsuarioReport">USER</string>
+    <string name="tabHeadExamenReport">DOC</string>
+    <string name="tabHeadIdPregReport">ID.Q</string>
+    <string name="tabHeadPregReport">QUESTION</string>
+    <string name="tabHeadIdRespReport">ID.A</string>
+    <string name="tabHeadRespReport">ANSWER</string>
+    <string name="tabHeadDniReport">DNI</string>
+    <!-- PREMIUM EXCEL -->
+    <string name="nombresExcelReportPrem">NAMES</string>
+    <string name="apellidosExcelReportPrem">LASTNAMES</string>
+    <string name="locacionExcelReportPrem">LOCATION</string>
+    <string name="sexoExcelReportPrem">GENDER</string>
+    <string name="notaFinExcelReportPrem">FINAL SCORE</string>
+    <string name="respCorrExcelReportPrem">CORRECT ANSWER</string>
+    <string name="respSelecExcelReportPrem">SELECTED ANSWER</string>
+    <!-- EXCEL -->
+    <string name="tituloExcelReport">REPORT TESTS AND SURVEYS SUBMITTED</string>
+    <string name="encuestadoExcelReport">RESPONDENT</string>
+    <string name="numEncuestaExcelReport">"N\u00b0 SURVEY"</string>
+    <string name="diaExcelReport">DAY</string>
+    <string name="horaExcelReport">HOUR</string>
+    <string name="direccionExcelReport">ADDRESS</string>
+    <string name="generoExcelReport">GENDER</string>
+    <string name="edadExcelReport">AGE</string>
+    <string name="comunaExcelReport">COMUNA</string>
+    <string name="ocupExcelReport">OCUPATION</string>
+    <string name="tiempoTotExcelReport">TOTAL TIME</string>
+    <string name="pregExcelReportAlias">Q</string>
+    <string name="respExcelReportAlias">A</string>
+    <string name="csvExportTitle">REPORTS</string>
+    <string name="csvArchivoTitle">"report.csv"</string>
+    <string name="columnExcelUsuarioRep">USER</string>
+    <!--BD COLUMN EXCEL -->
+    <string name="columnIdPregBDReport">ID_QUESTION</string>
+    <string name="columnIdRespBDReport">ID_ANSWER</string>
+    <string name="columnTiemResBDReport">ANSWER_TIME</string>
+
+    <!-- MENSAJES -->
+    <string name="msgGenExcelReport">The excel file was successfully generated</string>
+    <string name="msgReportNoData">There is no reports to show, please someone must complete a test, exam, survey before check any reports.</string>
+    <string name="msgErrorGenExcelReport">Sorry, an error occurred while exporting the report data to excel.</string>
+
+    <!-- #### POST LOGIN #### -->
+    <string name="tituloCrearPostLog">CREATE</string>
+    <string name="tituloPresentarPostLog">PRESENT</string>
+    <string name="tituloReportesPostLog">REPORT</string>
+    <string name="tituloDialogRepDispPostLog">AVAILABLE REPORTS</string>
+    <string name="tituloDialogRepExamPostLog">EXAMS/SURVEYS</string>
+    <!-- MENSAJES -->
+    <string name="msgNoExamsForReportPostLog">Dear user, you must create an exam/survey first, so that it appears in the list of available tests to present. Please return to the previous window.</string>
+
+    <!-- #### DIALOGO DE TIENDA / STORE #### -->
+    <string name="tituloStore">STORE</string>
+    <string name="descProdUnoStore">"Disable advertising permanently: "</string>
+    <string name="descProdDosStore">"Create unlimited testing: "</string>
+    <string name="descProdTresStore">"Enable premium reports: "</string>
+    <string name="descProdCuatroStore">"Enable multiple answers: "</string>
+    <string name="btnProductoInactivoStore">COMING SOON</string>
+    <!-- #### ENVIO DE EMAIL #### -->
+    <string name="emailEmisor">"javadoh@gmail.com"</string>
+    <string name="emailPassEmisor">"s1zha8to."</string>
+    <string name="emailSendError">There has been an error sending the email with the attached report, please try again later.</string>
+    <!-- PREMIUM MESSAGES -->
+    <string name="errorExamsMaxPremium">We are sorry, you have reach the maximum tests/surveys creation that is three. You have to go to the store and buy unlimited tests/surveys creation product.</string>
+
+    <string name="msgPreCreateTestSuccess">The data has been sent, now uploading the images, please wait a bit.</string>
+    <string name="msgCreateTestSuccess">The document was created successfully. You must login to use it.</string>
+    <string name="msgCreateTestError">There was an error uploading document images.</string>
+    <string name="msgErrorDuplicatedUser">We are sorry, this user login or user email already exists, please try again.</string>
+    <string name="msgErrorTaskServer">We are sorry, there was an error executing this task into the server.</string>
+    <string name="msgNoReportsForExam">There is no report results for this document.</string>
+    <string name="msgNoRegisteredUser">The user you have entered is not registered, please sign up.</string>
+    <string name="msgPaySuccess">The payment has been done</string>
+    <string name="msgUserRegistDone">The user has been registered, please login.</string>
+    <string name="msgCannotReturnTest">Dear user, it is not posible to get back into the test, exam, survey.</string>
+    <string name="msgCannotReturnTestStart">It is not posible to return once the test, survey, exam has begin.</string>
+    <string name="msgNoQuestionsBack">There is no questions before this one.</string>
+    <string name="msgRegisterPresenterValid">Dear user, you must fullfil all the required fields.</string>
+    <string name="docsList">LIST OF TEST,EXAMS,SURVEYS</string>
+    <string name="msgPasswordExamNotMatch">The entered password is not correct. Try again.</string>
+    <string name="msgNeedCreateTestFirst">Dear user, you must create a test, exam, survey first to continue. Please, go back.</string>
+
+    <string name="exitTitle">CONFIRMATION</string>
+    <string name="exitMsgConfirm">Do you really want to leave TestMy?</string>
+    <string name="msgErrorFileSize">The maximum file size allowed is 100kb. Please fix your image.</string>
+</resources>

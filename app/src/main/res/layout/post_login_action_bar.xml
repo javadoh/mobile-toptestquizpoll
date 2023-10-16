@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="30dip"
+    android:background="@color/colorPrimaryDark"
+    android:elevation="1dp"
+    android:minHeight="?attr/actionBarSize"
+    android:gravity="center"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    <ScrollView
+        android:id="@+id/linear_toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:orientation="horizontal"
+        >
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/create"
+            android:layout_weight="1"
+            android:text="CREAR"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/make"
+            android:layout_weight="1"
+            android:text="PRESENTAR"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/report"
+            android:layout_weight="1"
+            android:text="REPORTES"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/back_arrow_icon"
+            android:id="@+id/goback"
+            android:layout_weight="1"/>
+        </LinearLayout>-->
+    </ScrollView>
+
+</android.support.v7.widget.Toolbar>

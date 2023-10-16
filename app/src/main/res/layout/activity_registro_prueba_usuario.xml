@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar"
+        ></include>
+
+    <!--<com.google.android.gms.ads.AdView
+        android:id="@+id/adBannerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        android:layout_below="@id/toolbar"
+        ads:adUnitId="@string/adbanner">
+    </com.google.android.gms.ads.AdView>-->
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:id="@+id/mainLinearLayout"
+    android:layout_below="@+id/toolbar"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tituloCreaPru"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:scrollbars="none"
+        android:id="@+id/scrollViewId"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/subLinearLayoutTitles"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hintTituloPruebaCreaPru"
+            android:id="@+id/tituloPrueba"
+            android:textSize="14dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hintContraseñaCreaPru"
+            android:id="@+id/examPass"
+            android:inputType="textPassword"
+            android:layout_weight="1"
+            android:textSize="14dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hintTiempoMinCreaPru"
+            android:id="@+id/examTotalTimeMinutes"
+            android:inputType="numberDecimal"
+            android:layout_weight="1"
+            android:textSize="14dp"/>
+
+            </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tituloSeccionPregCreaPru"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/subLinearLayout"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hintPreguntaCreaPru"
+            android:id="@+id/textoPregunta"
+            android:textSize="14dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hintResACreaPru"
+            android:id="@+id/respuestaA"
+            android:layout_below="@+id/textoPregunta"
+            android:textSize="14dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hintResBCreaPru"
+            android:id="@+id/respuestaB"
+            android:textSize="14dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/respuestaC"
+            android:hint="@string/hintResCCreaPru"
+            android:textSize="14dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hintResDCreaPru"
+            android:id="@+id/respuestaD"
+            android:textSize="14dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linearRespCorBtnImg"
+            android:weightSum="2">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="1"
+            android:hint="@string/hintRespCorrCreaPru"
+            android:id="@+id/respuestaCorrectaId"
+            android:layout_weight="1.1"
+            android:textSize="14dp"
+            />
+
+        <Button android:layout_width="match_parent"
+            android:id="@+id/btnSeleccionarImg"
+            android:layout_height="40dp"
+            android:text="@string/btnCargaImgCreaPru"
+            android:textColor="@color/colorSecondaryText"
+            android:layout_weight="0.9"
+            android:textSize="14dp"
+            android:background="@drawable/btn_rounded_box_blue"
+            />
+
+        </LinearLayout>
+
+        <EditText android:id="@+id/textoImgUpload"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:hint="@string/hintRutaArchivoCreaPru"
+            android:singleLine="true" />
+
+        <!-- LINEAR DE IMAGEN SELECCIONADA Y BOTONES DE AGREGAR Y ELIMINAR -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:id="@+id/linearImgBtnFloats"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.8"
+                android:gravity="left"
+                >
+
+        <ImageView android:id="@+id/imageToUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+            </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/mensajeCargaDatos"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:textColor="@color/colorPrimaryText"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/subLinearLayoutFloats"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/btn_add"
+                android:layout_margin="6dp"
+                android:background="@drawable/btn_green_circle"
+                android:text="+"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                />
+
+            <Button
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/btn_delete"
+                android:layout_margin="6dp"
+                android:background="@drawable/btn_red_circle"
+                android:clickable="false"
+                android:enabled="false"
+                android:text="X"
+                android:textColor="@color/colorSecondaryText"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+            <LinearLayout
+            android:id="@+id/subLinearBtnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+            >
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/btnUploadData"
+                android:text="@string/btnGuardarDatosCreaPru"
+                android:layout_below="@+id/subLinearLayout"
+                android:background="@drawable/btn_rounded_box_blue"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="16dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.7" />
+
+                <Button
+                    android:id="@+id/btnRegresar"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="@string/btnRegresarCreaPru"
+                    android:textSize="14dp"
+                    android:layout_weight="1.3"
+                    android:textColor="@color/colorSecondaryText"
+                    android:background="@drawable/btn_rounded_grey_box"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+</RelativeLayout>

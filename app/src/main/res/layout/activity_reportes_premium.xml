@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+<include
+android:id="@+id/toolbar"
+layout="@layout/tool_bar"
+    ></include>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adBannerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/toolbar"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/adbanner">
+    </com.google.android.gms.ads.AdView>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dp"
+        android:scrollbars="none"
+        android:layout_below="@+id/adBannerView">
+
+        <LinearLayout
+            android:id="@+id/linearLayPremReportes"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView android:text="@string/tituloPpalAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_gravity="center_horizontal"
+                />
+            <!-- TITULOS DE LOS EXAMENES TIPO CARDVIEW -->
+            <LinearLayout
+                android:id="@+id/linearExamsTitles"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+            </LinearLayout>
+
+            <!--SECCION DE TABLA DE DATOS-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <!-- NOMBRE EXAMEN SELECCIONADO Y BOTON DE EXPORTAR DATOS -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:id="@+id/tituloExamenSeleccionado"
+                android:gravity="center"
+                android:text="@string/subTitlePruebaReportPrem"
+                    android:layout_weight="0.6"/>
+
+                <Button
+                    android:id="@+id/btnExportarExcel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:textStyle="italic"
+                    android:text="@string/exportarExcelEmailPrem"
+                    android:gravity="center"
+                    android:textColor="@color/colorSecondaryText"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_weight="1.4"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/horizontalScrollReport"
+                >
+
+            <TableLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="0,1"
+                android:id="@+id/dataPremReportesTable" >
+            </TableLayout>
+
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+</ScrollView>
+
+
+    <android.support.design.widget.FloatingActionButton
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/page_back_arrow"
+        android:id="@+id/btnFloatRegresar"
+        app:backgroundTint="@color/color_textgray_programatically"
+        app:borderWidth="0dp"
+        app:elevation="1dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        />
+
+</RelativeLayout>

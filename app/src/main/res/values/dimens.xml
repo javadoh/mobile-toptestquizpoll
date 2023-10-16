@@ -1,0 +1,16 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Dimensiones reporte tabla -->
+    <dimen name="reporte_date_width">150dp</dimen>
+    <dimen name="reporte_user_width">120dp</dimen>
+    <dimen name="reporte_idexam_width">50dp</dimen>
+    <dimen name="reporte_idquestion_width">50dp</dimen>
+    <dimen name="reporte_question_width">150dp</dimen>
+    <dimen name="reporte_idanswer_width">50dp</dimen>
+    <dimen name="reporte_answer_width">150dp</dimen>
+
+    <dimen name="imgCanvasCreateTest">400dp</dimen>
+</resources>

@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/htmlLinks</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:textColorSecondary">@color/colorSecondaryText</item>
+    </style>
+    <style name="TextAppearence.App.TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/grayColor</item>
+        <item name="android:textColorHint">@color/colorSecondaryText</item>
+        <item name="colorControlActivated">@color/colorPrimaryText</item>
+        <item name="colorControlHighlight">@color/colorPrimaryText</item>
+        <item name="colorControlNormal">@color/colorPrimaryText</item>
+    </style>
+    <color name="colorPrimary">#009ce7</color>
+    <color name="colorPrimaryDark">#006de7</color>
+    <color name="colorPrimaryText">#000000</color>
+    <color name="colorSecondaryText">#FFFFFF</color>
+    <color name="htmlLinks">#14cae4</color>
+    <color name="checkedboxTermsHome">#14cae4</color>
+    <color name="grayColor">#b3b3b3</color>
+    <color name="termsandconditionstext">#eeeeee</color>
+    <color name="textError">#f00000</color>
+    <color name="textBackDarkGray">#767786</color>
+    <color name="textBackGreen">#009a31</color>
+</resources>

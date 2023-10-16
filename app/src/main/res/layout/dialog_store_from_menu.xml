@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/store_backphone">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:paddingTop="10dp"
+        >
+    <!--TITULO-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tituloStore"
+        android:textColor="@color/colorSecondaryText"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="18dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+
+        <!--PRODUCTO UNO DESHABILITACION DE PUBLICIDAD-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/textBackDarkGray"
+            android:alpha=".9"
+            >
+
+        <TextView
+            android:id="@+id/txtTituloProducto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="14dp"
+            android:text="@string/descProdUnoStore"
+            android:textStyle="bold"
+            android:layout_weight="0.8"
+            android:gravity="center_vertical" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonPayOne"
+                android:text="@string/btnTiendaEnlacePago"
+                android:textSize="14dp"
+                android:backgroundTint="@color/textBackGreen"
+                android:textColor="@color/colorSecondaryText"
+                android:textStyle="bold"
+                android:layout_weight="1.2"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <!--PRODUCTO DOS CREAR PRUEBAS ILIMITADAS-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/grayColor"
+            android:alpha=".9">
+
+            <TextView
+                android:id="@+id/txtTituloProductoDos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorSecondaryText"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:text="@string/descProdDosStore"
+                android:layout_weight="0.8"
+                android:gravity="center_vertical"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonPayTwo"
+                android:text="@string/btnTiendaEnlacePago"
+                android:textSize="14dp"
+                android:backgroundTint="@color/textBackGreen"
+                android:textColor="@color/colorSecondaryText"
+                android:textStyle="bold"
+                android:layout_weight="1.2"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <!--PRODUCTO CUATRO HABILITAR REPORTES PREMIUM -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/textBackDarkGray"
+            android:alpha=".9">
+
+            <TextView
+                android:id="@+id/txtTituloProductoCuatro"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="14dp"
+                android:text="@string/descProdTresStore"
+                android:layout_weight="0.8"
+                android:textStyle="bold"
+                android:gravity="center_vertical"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonPayFour"
+                android:text="@string/btnProductoInactivoStore"
+                android:textSize="12dp"
+                android:backgroundTint="@color/grayColor"
+                android:textColor="@color/colorSecondaryText"
+                android:textStyle="bold"
+                android:layout_weight="1.2"
+                android:clickable="false"
+                android:enabled="false"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <!--PRODUCTO TRES HABILITAR RESPUESTAS MÚLTIPLES -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/grayColor"
+            android:alpha=".9">
+
+            <TextView
+                android:id="@+id/txtTituloProductoTres"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="14dp"
+                android:text="@string/descProdCuatroStore"
+                android:textStyle="bold"
+                android:layout_weight="0.8"
+                android:gravity="center_vertical"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonPayThree"
+                android:text="@string/btnProductoInactivoStore"
+                android:textSize="12dp"
+                android:backgroundTint="@color/textBackDarkGray"
+                android:textColor="@color/colorSecondaryText"
+                android:textStyle="bold"
+                android:layout_weight="1.2"
+                android:clickable="false"
+                android:enabled="false"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
